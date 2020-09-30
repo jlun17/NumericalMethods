@@ -33,7 +33,7 @@ def evalSpline(xData,yData,k,x):
         iRight = len(xData)- 1
         while 1:
             if (iRight-iLeft) <= 1: return iLeft
-            i =(iLeft + iRight)/2
+            i = int((iLeft + iRight)/2)
             if x < xData[i]: iRight = i
             else: iLeft = i
     
